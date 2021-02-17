@@ -112,7 +112,7 @@ These Beats allow us to collect the following information from each machine:
   
   - Metricbeat periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat will display information such as container CPU usage as follows:
   
-  
+  ![Metricbeat_elk](https://user-images.githubusercontent.com/72894197/108281320-61530180-7134-11eb-8acd-bfaca4d2d610.PNG)
 
 Using the Playbook
 
