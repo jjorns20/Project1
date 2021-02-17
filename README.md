@@ -30,22 +30,29 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting access to the network.
 
-TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+What aspect of security do load balancers protect? What is the advantage of a jump box?
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _ and system _.
+  -Load Balancers protect against DOS attacks. The advantage of the jump box is to restrict access to the web vm's. 
 
-TODO: What does Filebeat watch for?
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the actual machines and system logs.
 
-TODO: What does Metricbeat record?
+What does Filebeat watch for?
 
-The configuration details of each machine may be found below.
-Note: Use the Markdown Table Generator to add/remove values from the table.
+  -Filebeat helps generate and organzie log files, it logs information about the file system and shows which files have changed and when.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.0.0.1	Linux
-TODO			
-TODO			
-TODO			
+What does Metricbeat record?
+
+  -Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server.
+  
+The configuration details of each machine may be found below:
+
+
+ | Name	       | Function	        | IP Address	| Operating System |
+ |-------------|------------------|-------------|------------------|
+ | Jump Box	   | Gateway	        | 10.0.0.1	  | Linux            |
+ | WebVM-1     | DVWA Container		|	            |                  |
+ | WebVM-2     | DVWA Container   |			        |                  |
+ | Elk         | Configuration VM |             |                  |
 Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
