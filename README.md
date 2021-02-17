@@ -50,21 +50,23 @@ The configuration details of each machine may be found below:
  | Name	       | Function	        | IP Address	| Operating System |
  |-------------|------------------|-------------|------------------|
  | Jump Box	   | Gateway	        | 10.0.0.1	  | Linux            |
- | WebVM-1     | DVWA Container		|	            |                  |
- | WebVM-2     | DVWA Container   |			        |                  |
- | Elk         | Configuration VM |             |                  |
+ | WebVM-1     | DVWA Container		|	10.0.0.17   | Linux            |
+ | WebVM-2     | DVWA Container   |	10.0.0.18	  | Linux            |
+ | Elk         | Configuration VM | 10.2.0.4    | Linux            |
 Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-TODO: Add whitelisted IP addresses
+-76.94.242.109
 
-Machines within the network can only be accessed by _.
+Machines within the network can only be accessed by accessing the DVWA container in the Jump Box..
 
-TODO: Which machine did you allow to access your ELK VM? What was its IP address?
+Which machine did you allow to access your ELK VM? What was its IP address?
 
+  - The only machines that can access the Elk server are my personal computer and the Jump Box VM through a peering connection.
+  
 A summary of the access policies in place can be found in the table below.
 
 Name	Publicly Accessible	Allowed IP Addresses
