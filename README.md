@@ -4,7 +4,7 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-~/Project1/diagrams/Copy\of\Cloud-Network-Diagram.png
+![Cloud-Network-Diagram](https://user-images.githubusercontent.com/72894197/108268039-dae0f480-7120-11eb-82b0-855704ae507e.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _ file may be used to install only certain pieces of it, such as Filebeat.
 
