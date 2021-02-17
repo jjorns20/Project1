@@ -108,6 +108,10 @@ These Beats allow us to collect the following information from each machine:
 
   - Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash. When filebeat starts logging data it looks like this:
   
+  ![Filebeat_elk](https://user-images.githubusercontent.com/72894197/108281064-edb0f480-7133-11eb-81dc-37f76def1760.PNG)
+  
+  - Metricbeat periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat will display information such as container CPU usage as follows:
+  
   
 
 Using the Playbook
