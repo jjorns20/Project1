@@ -91,7 +91,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![docker_ps](https://user-images.githubusercontent.com/72894197/108277725-bdb32280-712e-11eb-9d3a-3731b8badce5.PNG)
 
 Target Machines & Beats
 
