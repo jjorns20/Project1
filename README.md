@@ -12,17 +12,17 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 This document contains the following details:
 
--Description of the Topologu
+- Description of the Topologu
 
--Access Policies
+- Access Policies
 
--ELK Configuration
+- ELK Configuration
 
-  -Beats in Use
+  - Beats in Use
 
-  -Machines Being Monitored
+  - Machines Being Monitored
 
--How to Use the Ansible Build
+- How to Use the Ansible Build
 
 Description of the Topology
 
@@ -32,24 +32,24 @@ Load balancing ensures that the application will be highly reliable, in addition
 
 What aspect of security do load balancers protect? What is the advantage of a jump box?
 
-  -Load Balancers protect against DOS attacks. The advantage of the jump box is to restrict access to the web vm's. 
+  - Load Balancers protect against DOS attacks. The advantage of the jump box is to restrict access to the web vm's. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the actual machines and system logs.
 
 What does Filebeat watch for?
 
-  -Filebeat helps generate and organzie log files, it logs information about the file system and shows which files have changed and when.
+  - Filebeat helps generate and organzie log files, it logs information about the file system and shows which files have changed and when.
 
 What does Metricbeat record?
 
-  -Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server.
+  - Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server.
   
 The configuration details of each machine may be found below:
 
 
  | Name	       | Function	        | IP Address	| Operating System |
  |-------------|------------------|-------------|------------------|
- | Jump Box	   | Gateway	        | 10.0.0.1	  | Linux            |
+ | Jump Box	   | Gateway	        | 10.0.0.16	  | Linux            |
  | WebVM-1     | DVWA Container		|	10.0.0.17   | Linux            |
  | WebVM-2     | DVWA Container   |	10.0.0.18	  | Linux            |
  | Elk         | Configuration VM | 10.2.0.4    | Linux            |
@@ -59,7 +59,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
--76.94.242.109
+  - 76.94.242.109(My personal computer)
 
 Machines within the network can only be accessed by accessing the DVWA container in the Jump Box..
 
@@ -69,21 +69,25 @@ Which machine did you allow to access your ELK VM? What was its IP address?
   
 A summary of the access policies in place can be found in the table below.
 
-Name	Publicly Accessible	Allowed IP Addresses
-Jump Box	Yes/No	10.0.0.1 10.0.0.2
+| Name	    | Publicly Accessible |	Allowed IP Addresses     |
+|-----------|---------------------|--------------------------|
+| Jump Box	| Yes/No	            | 10.0.0.16, 76.94.242.109 | 
+| WebVM-1   | No                  | 10.0.0.17                |
+| WebVM-2   | No                  | 10.0.0.18                |
+|Elk        | No                  | 10.2.0.4                 |
+
 Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-TODO: What is the main advantage of automating configuration with Ansible?
+ - You don't meed to install any other software or firewall ports on the client systems you want to automate.
 
 The playbook implements the following tasks:
 
-TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-
-...
-
-...
+- Install Docker
+- Download Image
+- Configure container
+- Create playbook to install container with docker and filebeat and metricbeat
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
