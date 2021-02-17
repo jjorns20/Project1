@@ -129,7 +129,7 @@ Run the playbook, and navigate to kibana page to check that the installation wor
 Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 
   - install_elk.yml is the file you update to make ansible run. You specify by the IP address.
-  - 
+  
 Which URL do you navigate to in order to check that the ELK server is running?
 
   - Navigate to https://<ELK_IP_Address>:5601/app/kibana
