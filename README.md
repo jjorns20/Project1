@@ -106,7 +106,9 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-
+  - Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash. When filebeat starts logging data it looks like this:
+  
+  
 
 Using the Playbook
 
