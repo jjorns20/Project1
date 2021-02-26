@@ -80,7 +80,7 @@ Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
- - You don't meed to install any other software or firewall ports on the client systems you want to automate.
+ - You don't need to install any other software or firewall ports on the client systems you want to automate.
 
 The playbook implements the following tasks:
 
